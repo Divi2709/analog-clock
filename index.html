@@ -7,8 +7,25 @@
     <link rel="stylesheet" href ="style.css">
 </head>
 <body>
-    
+   <div id="task">
+
+    <input type="text"
+           id="taskName"
+           placeholder="task">
+
+    <input type="time"
+           id="startTime">
+
+    <input type="time"
+           id="endTime">
+
+    <button onclick="addTask()">
+        add
+    </button>
+
+</div>
     <div id="clockContainer">
+        <canvas id="taskCanvas"></canvas>
         <div id="hour"> </div>
             <div id="minute"></div>
                 <div id="second"></div>
